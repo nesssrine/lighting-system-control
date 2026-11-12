@@ -1,0 +1,23 @@
+Parametres B1 charges.
+Modele B1_Acquisition.slx cree.
+
+Scenario 1 pret : luxRawSig, msgSig, swSig, flashSig dans le Workspace.
+===== SCENARIO 1 : filtrage et diagnostic =====
+  [PASS] NFR-04 reduction du bruit (ecart-type filtre / brut)       mesure = 0.156
+  [PASS] REQ-LSC-09 valeur hors plage -> defaut immediat            mesure = 0.000
+  [PASS] REQ-LSC-09 filtre fige pendant le defaut (lux max)         mesure = 490.302
+  [PASS] REQ-LSC-09 retour a la normale 1 s apres                   mesure = 1.000
+  [PASS] REQ-LSC-09 absence courte (0,3 s) toleree                  mesure = 1.000
+  [PASS] REQ-LSC-09 absence > 500 ms -> defaut                      mesure = 0.500
+  [PASS] REQ-LSC-09 retour 1 s apres le retour du message           mesure = 1.000
+Scenario 2 pret : rebonds du commodo a 2 s, parasites a 5 s et 10 s, appel de phares a 8 s.
+
+===== SCENARIO 2 : anti-rebond et filtre =====
+  [PASS] NFR-04 constante de temps du filtre (63 %)                 mesure = 0.200
+  [PASS] NFR-04 commodo valide 50 ms apres le dernier rebond        mesure = 0.050
+  [PASS] NFR-04 parasite de 20 ms ignore (commodo)                  mesure = 1.000
+  [PASS] REQ-LSC-02 appel de phares valide apres 50 ms              mesure = 0.050
+  [PASS] REQ-LSC-02 relachement valide apres 50 ms                  mesure = 0.060
+  [PASS] NFR-04 parasite de 20 ms ignore (appel de phares)          mesure = 0.000
+
+Figures enregistrees : B1_scenario1.png, B1_scenario2.png

@@ -1,0 +1,27 @@
+Scenario 2 pret : tunnel de 10 s a 20 s.
+
+===== SCENARIO 2 : traversee d'un tunnel en plein jour =====
+  [PASS] S2-01 Plein jour avant le tunnel : DRL seuls                       mesure = 1.000
+  [PASS] S2-02 REQ-LSC-08 entree de tunnel : croisement <= 0,4 s            mesure = 0.400
+  [PASS] S2-03 Pas de feux de route dans le tunnel (150 lux)                mesure = 0.000
+  [PASS] S2-04 REQ-LSC-07 sortie : extinction 5 s apres                     mesure = 5.050
+  [PASS] S2-05 Aucun faux defaut lampe                                      mesure = 0.000
+Scenario 3 pret : camera en panne 10-20 s, appel de phares a 26 s.
+
+===== SCENARIO 3 : panne de camera et appel de phares =====
+  [PASS] S3-01 Nuit, 80 km/h : feux de route AHB avant la panne             mesure = 1.000
+  [PASS] S3-02 REQ-LSC-14 camera en panne : route coupee <= 0,5 s           mesure = 0.000
+  [PASS] S3-03 REQ-LSC-14/26 temoin AHB en defaut (etat FAULT = 4)          mesure = 4.000
+  [PASS] S3-04 Croisement maintenu pendant la panne                         mesure = 1.000
+  [PASS] S3-05 Camera revenue : route 2 s apres (REQ-LSC-12)                mesure = 2.000
+  [PASS] S3-06 REQ-LSC-15 appel de phares : route ON, AHB en PAUSE (3)      mesure = 1.000
+  [PASS] S3-07 Apres l'appel : AHB reprend 2 s apres le relachement         mesure = 1.000
+Scenario 4 pret : contact coupe a 10 s, batterie qui descend sous 11,8 V.
+
+===== SCENARIO 4 : batterie faible pendant le follow-me-home =====
+  [PASS] S4-01 Coupure du contact de nuit : follow-me-home actif            mesure = 1.000
+  [PASS] S4-02 Batterie a 12,6 V : croisement a 100 % (pas de regulation)   mesure = 100.000
+  [PASS] S4-03 REQ-LSC-30 annulation quand Vbat < 11,8 V                    mesure = 0.000
+  [PASS] S4-04 Tout eteint apres l'annulation                               mesure = 0.000
+  [PASS] S4-05 Pas de reactivation (batterie toujours faible)               mesure = 0.000
+  [PASS] S4-06 Aucun faux defaut lampe malgre la tension basse              mesure = 0.000

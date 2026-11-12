@@ -1,0 +1,18 @@
+Parametres B7 charges.
+Modele B7_Driver.slx cree.
+
+Scenario 1 pret : 10 signaux dans le Workspace.
+===== SCENARIO 1 : pilotage des sorties =====
+  [PASS] Soft-start : croisement progressif (a 1,05 s < 70 %)           mesure = 50.000
+  [PASS] Soft-start : plein regime atteint en 0,1 s                     mesure = 0.090
+  [PASS] Regulation : rapport cyclique a 14,4 V = 84 %                  mesure = 84.000
+  [PASS] Regulation : tension efficace = 13,2 V (14,4 V batterie)       mesure = 13.200
+  [PASS] Batterie faible 12,5 V : 100 % (pas de surtension possible)    mesure = 100.000
+  [PASS] Regulation : tension efficace = 13,2 V (13,8 V batterie)       mesure = 13.200
+  [PASS] REQ-LSC-05 LED avant : DRL 100 % puis veilleuse 30 %           mesure = 1.000
+  [PASS] LED arriere : position 20 %, stop 100 % (REQ-LSC-19)           mesure = 1.000
+  [PASS] REQ-LSC-16 clignotant : plein regime des le 1er pas            mesure = 91.000
+  [PASS] Extinction immediate du croisement (9 s)                       mesure = 0.000
+  [PASS] Commandes vers B6 coherentes (croisement G)                    mesure = 1.000
+
+Figure enregistree : B7_scenario1.png

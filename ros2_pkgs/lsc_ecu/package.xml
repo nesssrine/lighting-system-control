@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lsc_ecu</name>
+  <version>1.0.0</version>
+  <description>Calculateur d'eclairage (Lighting System Control) : code C genere par Embedded Coder, valide en SIL, execute comme noeud ROS 2.</description>
+  <maintainer email="amina.borcheni@enetcom.tn">Amina Borcheni</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

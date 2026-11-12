@@ -1,0 +1,18 @@
+Parametres B6 charges.
+Modele B6_Diag.slx cree.
+
+Scenario 1 pret : cmdSig, curSig, clrSig dans le Workspace.
+===== SCENARIO 1 : pannes de lampes =====
+  [PASS] Aucune fausse detection 0-5 s (pics d'allumage, micro-coupure) mesure = 0.000
+  [PASS] REQ-LSC-22 croisement D grille : detection <= 200 ms           mesure = 0.100
+  [PASS] REQ-LSC-24 mode degrade = 2 (croisement D)                     mesure = 2.000
+  [PASS] Temoin defaut allume                                           mesure = 1.000
+  [PASS] REQ-LSC-22 clignotant G grille : <= 200 ms apres allumage      mesure = 0.150
+  [PASS] REQ-LSC-23 information lampe grillee vers B5 (fault_L)         mesure = 1.000
+  [PASS] REQ-LSC-22 court-circuit croisement G : <= 200 ms              mesure = 0.100
+  [PASS] REQ-LSC-24 mode degrade = 3 (les deux croisements)             mesure = 3.000
+  [PASS] Guerison croisement D repare : 1 s apres                       mesure = 1.000
+  [PASS] DTC memorise malgre la guerison (bits 1+2+4 = 22)              mesure = 22.000
+  [PASS] Effacement DTC : ne garde que les defauts actifs (20)          mesure = 20.000
+
+Figure enregistree : B6_scenario1.png

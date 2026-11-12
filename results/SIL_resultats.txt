@@ -1,0 +1,8 @@
+SIL - Test back-to-back MIL (MATLAB) / SIL (code C genere par Embedded Coder, C89)
+Code : sil\codegen\lib\LSC_ECU (runnables LSC_cmd et LSC_diag) - banc : sil\sil_harness.c
+SIL-00 Boucle des runnables = modele Simulink LSC_Integration (scenario 1)      PASS (ecart 0)
+SIL-01 Scenario 1 trajet complet   13001 pas x 22 sorties   0 difference   PASS
+SIL-02 Scenario 2 tunnel            4001 pas x 22 sorties   0 difference   PASS
+SIL-03 Scenario 3 camera            4001 pas x 22 sorties   0 difference   PASS
+SIL-04 Scenario 4 batterie          6001 pas x 22 sorties   0 difference   PASS
+SIL-05 Test de mutation (seuil 1000 -> 500 lux dans le code C) : 65 pas differents detectes  PASS

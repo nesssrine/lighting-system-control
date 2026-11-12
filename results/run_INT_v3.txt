@@ -1,0 +1,31 @@
+Parametres B1 charges.
+Parametres B2 charges.
+Parametres B3 charges.
+Parametres B4/B8 charges.
+Parametres B5 charges.
+Parametres B6 charges.
+Parametres B7 charges.
+Modele LSC_Integration.slx cree : 8 blocs + modele des lampes.
+
+Scenario d'integration pret : 20 signaux in_* dans le Workspace.
+===== INTEGRATION : trajet complet de 130 s =====
+  [PASS] INT-01 Parking contact coupe : tout eteint                       mesure = 0.000
+  [PASS] INT-02 Contact : DRL (B4 -> B7 LED avant 100 %)                  mesure = 0.000
+  [PASS] INT-03 Clignotant G : 3 flashs en 2 s (B5 -> B7)                 mesure = 3.000
+  [PASS] INT-04 Crepuscule : croisement allume (B1 -> B2 -> B4)           mesure = 31.960
+  [PASS] INT-05 Aucun faux defaut lampe avant la panne (B6)               mesure = 0.000
+  [PASS] INT-06 Nuit, 80 km/h : feux de route AHB (B3 -> B4 -> B7)        mesure = 1.000
+  [PASS] INT-07 Regulation 14,2 V : croisement a 86 %                     mesure = 86.000
+  [PASS] INT-08 Vehicule en face : route coupee <= 300 ms                 mesure = 0.000
+  [PASS] INT-09 Route libre 2 s : feux de route rallumes                  mesure = 2.000
+  [PASS] INT-10 Ampoule grillee : DTC + temoin <= 300 ms (B7 -> lampe -> B6) mesure = 0.100
+  [PASS] INT-11 Mode degrade : croisement D coupe, G maintenu (B6 -> B4)  mesure = 1.000
+  [PASS] INT-12 Freinage d'urgence : ESS actif (B5)                       mesure = 0.000
+  [PASS] INT-13 ESS : feux stop clignotent (>= 8 flashs)                  mesure = 11.000
+  [PASS] INT-14 Arret : detresse automatique                              mesure = -0.008
+  [PASS] INT-15 Redemarrage > 10 km/h : detresse eteinte                  mesure = 0.007
+  [PASS] INT-16 Coupure contact de nuit : follow-me-home (B8)             mesure = 1.000
+  [PASS] INT-17 Follow-me-home : extinction 30 s apres la porte (125 s)   mesure = 0.000
+  [PASS] INT-18 Le DTC reste memorise en fin de trajet (bit 1 = 2)        mesure = 2.000
+
+Figure enregistree : INT_trajet.png

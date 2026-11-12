@@ -1,0 +1,12 @@
+Modele B2_AutoHeadlamp.slx cree.
+
+===== SCENARIO 1 =====
+  [PASS] REQ-LSC-06 allumage apres 2 s                 mesure = 2.00
+  [PASS] REQ-LSC-07 extinction apres 5 s               mesure = 5.00
+  [PASS] REQ-LSC-08 tunnel <= 0,4 s                    mesure = 0.38
+  [PASS] REQ-LSC-07 pas d'oscillation (4 fronts attendus) mesure = 4.00
+
+===== SCENARIO 2 =====
+  [PASS] REQ-LSC-09 croisement ON sur defaut capteur   mesure = 0.00
+
+Figures enregistrees : B2_scenario1.png, B2_scenario2.png

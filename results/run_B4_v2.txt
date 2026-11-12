@@ -1,0 +1,33 @@
+Parametres B4/B8 charges.
+Modele B4_LightingMgr.slx cree.
+
+Scenario 1 pret : 11 signaux dans le Workspace.
+===== SCENARIO 1 : conduite normale (B4) =====
+  [PASS] REQ-LSC-05 DRL au contact (<= 200 ms)                              mesure = 0.000
+  [PASS] REQ-LSC-01 POSITION : veilleuses seules                            mesure = 1.000
+  [PASS] REQ-LSC-04 antibrouillard refuse sans croisement                   mesure = 0.000
+  [PASS] REQ-LSC-01 CROISEMENT (<= 100 ms)                                  mesure = 0.000
+  [PASS] REQ-LSC-02 commutation route ON puis OFF                           mesure = 1.000
+  [PASS] REQ-LSC-03 appel de phares (route pendant l'appui)                 mesure = 1.000
+  [PASS] REQ-LSC-04 antibrouillard accepte avec croisement                  mesure = 1.000
+  [PASS] REQ-LSC-04/05 AUTO de jour : croisement + antibrouillard OFF, DRL ON mesure = 1.000
+  [PASS] REQ-LSC-06 AUTO de nuit : demande de B2 appliquee                  mesure = 0.000
+  [PASS] REQ-LSC-10 demande AHB de B3 appliquee (22-26 s)                   mesure = 1.000
+  [PASS] REQ-LSC-24 mode degrade : croisement D coupe, G + veilleuses ON    mesure = 1.000
+Scenario 2 pret : coupure contact 5 s, porte 7-10 s, annulations 46 s et 52 s.
+
+===== SCENARIO 2 : follow-me-home automatique (B8) =====
+  [PASS] REQ-LSC-25 activation a la coupure du contact (sans trou)          mesure = 1.000
+  [PASS] REQ-LSC-32 pas de feux de route pendant le FMH                     mesure = 0.000
+  [PASS] REQ-LSC-29 extinction 30 s apres fermeture de la porte (10 s)      mesure = 0.000
+  [PASS] REQ-LSC-30 annulation par le commodo (46 s) -> veilleuses          mesure = 1.000
+  [PASS] REQ-LSC-30 annulation batterie faible (52 s)                       mesure = 0.000
+Scenario 3 pret : 3 appels de phares a 4 / 4,5 / 5 s, un 4e a 100 s.
+
+===== SCENARIO 3 : follow-me-home manuel (B8) =====
+  [PASS] REQ-LSC-31 pas d'activation automatique de jour                    mesure = 0.000
+  [PASS] REQ-LSC-27 activation par appel de phares (<= 100 ms)              mesure = 0.000
+  [PASS] REQ-LSC-28 3 appels = 90 s (extinction a 94 s)                     mesure = 0.000
+  [PASS] REQ-LSC-27 appel trop tard (98 s apres coupure) refuse             mesure = 0.000
+
+Figures enregistrees : B4_scenario1.png, B8_followmehome.png

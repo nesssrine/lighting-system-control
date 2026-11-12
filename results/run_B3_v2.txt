@@ -1,0 +1,19 @@
+Modele B3_AHB.slx cree.
+
+===== SCENARIO 1 : route de nuit =====
+  [PASS] REQ-LSC-10 activation (40 km/h + 2 s route libre)            mesure = 2.00
+  [PASS] REQ-LSC-11 coupure apres detection <= 300 ms                 mesure = 0.01
+  [PASS] REQ-LSC-12 reactivation 2 s apres fin detection              mesure = 2.00
+  [PASS] REQ-LSC-12 aucun rallumage pendant detections intermittentes mesure = 0.00
+  [PASS] REQ-LSC-12 reactivation apres la derniere detection (39,2 s) mesure = 2.00
+  [PASS] REQ-LSC-13 maintien entre 40 et 30 km/h (t = 52 s)           mesure = 1.00
+  [PASS] REQ-LSC-13 coupure sous 30 km/h                              mesure = 0.00
+
+===== SCENARIO 2 : defauts et priorites =====
+  [PASS] REQ-LSC-14 coupure sur defaut camera <= 500 ms               mesure = 0.01
+  [PASS] REQ-LSC-14 etat FAULT signale (t = 12 s)                     mesure = 4.00
+  [PASS] REQ-LSC-15 action manuelle prioritaire <= 100 ms             mesure = 0.01
+  [PASS] REQ-LSC-15 etat PAUSE pendant l'action (t = 26 s)            mesure = 3.00
+  [PASS] REQ-LSC-10 desactivation quand il fait jour                  mesure = 0.01
+
+Figures enregistrees : B3_scenario1.png, B3_scenario2.png

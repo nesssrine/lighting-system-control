@@ -1,0 +1,8 @@
+Parametres B2 charges.
+COMPILER: aucun
+[Warning: Selected C compiler is incompatible with C99 (ISO) language standard. Code generation will
+switch to C89/90 (ANSI) instead. Consider changing C compiler or target language setting to suppress this
+warning.] 
+Code generation successful: <a href="matlab: open('C:\Users\LENOVO\Documents\LightingSystemControl\sil\codegen\lib\AutoHeadlampLogic\html\report.mldatx');">View report</a>
+
+CODEGEN_OK

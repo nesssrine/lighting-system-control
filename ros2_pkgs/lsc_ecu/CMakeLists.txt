@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.8)
+project(lsc_ecu C CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Code C du calculateur genere par MATLAB Coder / Embedded Coder (identique au SIL)
+file(GLOB ECU_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/ecu/*.c)
+add_library(lsc_ecu_code STATIC ${ECU_SOURCES})
+set_target_properties(lsc_ecu_code PROPERTIES C_STANDARD 90 POSITION_INDEPENDENT_CODE ON)
+target_include_directories(lsc_ecu_code PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/ecu)
+target_link_libraries(lsc_ecu_code m)
+
+add_executable(lsc_ecu_node src/lsc_ecu_node.cpp)
+target_link_libraries(lsc_ecu_node lsc_ecu_code rclcpp::rclcpp ${std_msgs_TARGETS})
+install(TARGETS lsc_ecu_node DESTINATION lib/${PROJECT_NAME})
+ament_package()

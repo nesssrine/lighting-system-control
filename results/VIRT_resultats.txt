@@ -1,0 +1,48 @@
+VIRTUALISATION ROS 2 + Webots - trajet complet - 17 / 17 PASS
+[PASS] V-01  REQ-LSC-05     Jour, contact mis : DRL seuls                                  etat=[1]
+[PASS] V-02  REQ-LSC-17     Impulsion courte du clignotant : 3 clignotements               3 clignotements
+[PASS] V-03  REQ-LSC-09     Message capteur absent > 0,5 s : croisement (etat sur)         croisement apres 0.52 s
+[PASS] V-04  REQ-LSC-08     Entree de tunnel : croisement <= 0,4 s                         apres 0.31 s
+[PASS] V-05  REQ-LSC-07     Sortie de tunnel : retour DRL apres 5 s de lumiere             apres 5.02 s
+[PASS] V-06  REQ-LSC-23     Ampoule clignotant D grillee : hyper-clignotement (3 Hz)       9 impulsions en 3 s
+[PASS] V-07  Diag B6        Defaut lampe memorise (DTC)                                    DTC max=8
+[PASS] V-08  Detresse       Commande detresse : feux de detresse actifs                    
+[PASS] V-09  REQ-LSC-06     Crepuscule : croisement allume a la tombee de la nuit          lux filtre=1190
+[PASS] V-10  REQ-LSC-10/11  Nuit, > 40 km/h, route libre : feux de route AHB               route allumee 4.3 s
+[PASS] V-11  REQ-LSC-13     Vehicule en face detecte par la camera : route coupee          apres 0.01 s
+[PASS] V-12  REQ-LSC-12     Route libre : feux de route rallumes ~2 s apres                apres 2.01 s
+[PASS] V-13  REQ-LSC-15     Appel de phares : route allumee, AHB en pause                  ahb=[1, 2, 3]
+[PASS] V-14  REQ-LSC-14     Panne camera : AHB en defaut, route coupee                     defaut apres 0.02 s
+[PASS] V-15  REQ-LSC-20     Freinage d'urgence > 50 km/h : feux stop clignotants (ESS)     deceleration max mesuree dans le journal
+[PASS] V-16  REQ-LSC-25     Coupure du contact de nuit : follow-me-home                    
+[PASS] V-17  REQ-LSC-25     Follow-me-home : extinction 30 s apres la fermeture de la porte apres 30.02 s
+
+Evenements (temps reel depuis le debut) :
+     0.01 s  depart
+    16.40 s  clignotant_impulsion
+    16.71 s  clignotant_relache
+    26.24 s  tunnel_entree
+    29.27 s  tunnel_sortie
+    36.06 s  capteur_defaut
+    37.57 s  capteur_retour
+    44.37 s  ampoule_clignotant_D_grillee
+    48.37 s  clignotant_D_coupe
+    49.68 s  detresse_on
+    52.69 s  detresse_off
+    58.00 s  nuit
+    64.70 s  vehicule_1
+    71.94 s  vehicule_1_croise
+    77.62 s  appel_phares
+    78.23 s  appel_relache
+    82.92 s  camera_panne
+    85.92 s  camera_retour
+    91.13 s  vehicule_2
+    98.41 s  vehicule_2_croise
+   101.81 s  acceleration_70
+   112.74 s  freinage_urgence
+   115.66 s  arret
+   118.66 s  frein_relache
+   119.66 s  contact_coupe
+   121.66 s  porte_ouverte
+   122.66 s  porte_fermee
+   157.66 s  fin

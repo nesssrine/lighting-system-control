@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="LSC ambiance">
+    <webots>
+        <plugin type="lsc_virtual.ambiance_plugin.AmbiancePlugin" />
+    </webots>
+</robot>

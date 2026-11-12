@@ -1,0 +1,4 @@
+SIL B2 - test back-to-back MIL (MATLAB) vs code C genere (Embedded Coder, C89)
+Code C compile avec gcc -std=c89, harness.c, entrees = sil\B2_mil.csv
+pas compares=4501 differences=0
+[PASS] B2 : code C identique au modele

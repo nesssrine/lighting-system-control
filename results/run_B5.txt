@@ -1,0 +1,26 @@
+Parametres B5 charges.
+Modele B5_Signal.slx cree.
+
+Scenario 1 pret : 9 signaux dans le Workspace.
+===== SCENARIO 1 : clignotants et detresse =====
+  [PASS] REQ-LSC-16 periode de clignotement (1,5 Hz)              mesure = 0.668
+  [PASS] REQ-LSC-16 rapport cyclique                              mesure = 0.501
+  [PASS] REQ-LSC-16 1er flash des l'appui                         mesure = 0.000
+  [PASS] Arret au relachement du levier (5 s)                     mesure = 0.000
+  [PASS] REQ-LSC-17 mode autoroute : 3 clignotements              mesure = 3.000
+  [PASS] REQ-LSC-23 hyper-clignotement (lampe grillee)            mesure = 0.334
+  [PASS] REQ-LSC-18 detresse : gauche et droite en phase          mesure = 1.000
+  [PASS] REQ-LSC-18 detresse active contact coupe                 mesure = 5.000
+Scenario 2 pret : freinage normal 2 s, fort a 40 km/h 5 s, urgence a 90 km/h 10 s.
+
+===== SCENARIO 2 : feux stop et freinage d'urgence =====
+  [PASS] REQ-LSC-19 feux stop a l'appui (<= 50 ms)                mesure = 0.000
+  [PASS] Pas d'ESS a 40 km/h (freinage fort)                      mesure = 0.000
+  [PASS] REQ-LSC-20 ESS active au freinage d'urgence              mesure = 0.000
+  [PASS] REQ-LSC-20 feux stop clignotent a 4 Hz (periode)         mesure = 0.250
+  [PASS] REQ-LSC-20 fin ESS sous 2,5 m/s2                         mesure = 0.005
+  [PASS] Feux stop fixes apres l'ESS (pedale appuyee)             mesure = 1.000
+  [PASS] REQ-LSC-21 detresse automatique a l'arret                mesure = -0.015
+  [PASS] REQ-LSC-21 extinction au redemarrage (> 10 km/h)         mesure = 0.007
+
+Figures enregistrees : B5_scenario1.png, B5_scenario2.png

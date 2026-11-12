@@ -1,0 +1,15 @@
+Parametres B2 charges.
+[Warning: Selected C compiler is incompatible with C99 (ISO) language standard. Code generation will
+switch to C89/90 (ANSI) instead. Consider changing C compiler or target language setting to suppress
+this warning.] 
+------------------------------------------------------------------------
+'AutoHeadlampLogic_rtw.bat' n'est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+Error(s) encountered while building "AutoHeadlampLogic"
+------------------------------------------------------------------------
+??? Build error: C compiler produced errors. See the Build Log for further details.
+<a href="matlab:helpview('coder','msginfo_Coder_FE_TargetBuildError');">More information</a>
+Code generation failed: <a href="matlab: open('C:\Users\LENOVO\Documents\LightingSystemControl\sil\codegen\sil\AutoHeadlampLogic\html\report.mldatx');">View Error Report</a>
+
+SIL_MATLAB_ERR: 

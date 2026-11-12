@@ -1,0 +1,54 @@
+Parametres B1 charges.
+Parametres B2 charges.
+Parametres B3 charges.
+Parametres B4/B8 charges.
+Parametres B5 charges.
+Parametres B6 charges.
+Parametres B7 charges.
+Scenario d'integration pret : 20 signaux in_* dans le Workspace.
+{Unable to perform assignment because the size of the left side is 1-by-24 and the size of the right
+side is 1-by-22.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sil_all', 'C:\Users\LENOVO\Documents\LightingSystemControl\sil_all.m', 54)" style="font-weight:bold">sil_all</a> (<a href="matlab: opentoline('C:\Users\LENOVO\Documents\LightingSystemControl\sil_all.m',54,0)">line 54</a>)
+        Y(k,:) = [double(duty(:)).' double(lst) double(fmh) double(ahb) double(haz) double(ess) lux veff ...
+} 
+cd(fileparts(which('run_int'))); clear functions; sil_all
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cd')" style="font-weight:bold">cd</a>
+Unable to change current folder to '' (Name is nonexistent or not a folder).
+} 
+cd('C:\Users\LENOVO\Documents\LightingSystemControl'); clear functions; sil_all
+Parametres B1 charges.
+Parametres B2 charges.
+Parametres B3 charges.
+Parametres B4/B8 charges.
+Parametres B5 charges.
+Parametres B6 charges.
+Parametres B7 charges.
+Scenario d'integration pret : 20 signaux in_* dans le Workspace.
+Scenario 1 : 13001 pas exportes.
+Scenario 2 pret : tunnel de 10 s a 20 s.
+Scenario 2 : 4001 pas exportes.
+Scenario 3 pret : camera en panne 10-20 s, appel de phares a 26 s.
+Scenario 3 : 4001 pas exportes.
+Scenario 4 pret : contact coupe a 10 s, batterie qui descend sous 11,8 V.
+Scenario 4 : 6001 pas exportes.
+Scenario d'integration pret : 20 signaux in_* dans le Workspace.
+Equivalence MATLAB / Simulink (scenario 1) : ecart max duty=0 etat=0 ahb=0 dtc=0 lux=0
+[PASS] SIL-00 La boucle des runnables reproduit le modele LSC_Integration
+[Warning: The 'InlineThreshold' option will be removed in a future release. Use
+'InlineBetweenUserFunctions', 'InlineBetweenMathWorksFunctions', and
+'InlineBetweenUserAndMathWorksFunctions' options instead.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('coder.internal.warning', 'C:\Program Files\MATLAB\R2022b\toolbox\shared\coder\coder\lib\+coder\+internal\warning.m', 8)" style="font-weight:bold">coder.internal.warning</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\shared\coder\coder\lib\+coder\+internal\warning.m',8,0)">line 8</a>)
+In emcArgParserAndValidator
+In emcArgParserAndValidator
+In emlckernel
+In emlckernel
+In emlcprivate
+In codegen
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sil_all', 'C:\Users\LENOVO\Documents\LightingSystemControl\sil_all.m', 84)" style="font-weight:bold">sil_all</a> (<a href="matlab: opentoline('C:\Users\LENOVO\Documents\LightingSystemControl\sil_all.m',84,0)">line 84</a>)] 
+[Warning: Selected C compiler is incompatible with C99 (ISO) language standard. Code generation will
+switch to C89/90 (ANSI) instead. Consider changing C compiler or target language setting to suppress
+this warning.] 
+Code generation successful: <a href="matlab: open('C:\Users\LENOVO\Documents\LightingSystemControl\sil\codegen\lib\LSC_ECU\html\report.mldatx');">View report</a>
+
+CODEGEN_OK

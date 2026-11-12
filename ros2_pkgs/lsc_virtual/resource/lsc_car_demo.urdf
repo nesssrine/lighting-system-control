@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="LSC Tesla demo">
+    <webots>
+        <plugin type="lsc_virtual.lsc_demo_plugin.LscDemoPlugin" />
+    </webots>
+</robot>

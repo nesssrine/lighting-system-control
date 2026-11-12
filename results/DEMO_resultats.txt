@@ -1,0 +1,47 @@
+DEMONSTRATION ROS 2 + Webots (virages, tunnel, ESS, nuit, maison) - 15 / 15 tests PASS
+[PASS] D-01  REQ-LSC-05     Depart de jour : feux de jour (DRL) seuls                      etats [1]
+[PASS] D-02  REQ-LSC-16     Virage a droite : clignotant droit a 1,5 Hz                    6 impulsions en 4 s
+[PASS] D-03  REQ-LSC-08     Entree du tunnel : croisement <= 0,4 s                         0.31 s
+[PASS] D-04  REQ-LSC-07     Sortie du tunnel : feux de jour apres 5 s de lumiere           5.01 s
+[PASS] D-05  REQ-LSC-23     Virage a gauche, lampe grillee : hyper-clignotement (3 Hz)     12 impulsions en 4 s
+[PASS] D-06  Diag B6        Lampe grillee memorisee (DTC)                                  DTC = 4
+[PASS] D-07  REQ-LSC-20     Freinage d'urgence a 85 km/h : feux stop clignotants (ESS)     10 eclats des feux stop
+[PASS] D-08  REQ-LSC-21     Arret apres freinage d'urgence : detresse automatique          
+[PASS] D-09  REQ-LSC-21     Redemarrage > 10 km/h : detresse automatique eteinte           0.01 s
+[PASS] D-10  REQ-LSC-06     Crepuscule : croisement automatique                            
+[PASS] D-11  REQ-LSC-10/11  Nuit, route libre : feux de route automatiques                 4.3 s de feux de route
+[PASS] D-12  REQ-LSC-13     Vehicule en face (x2) : feux de route coupes                   0.00 s / 0.01 s
+[PASS] D-13  REQ-LSC-12     Route libre (x2) : feux de route rallumes apres 2 s            2.02 s / 2.01 s
+[PASS] D-14  REQ-LSC-25     Contact coupe de nuit devant la maison : follow-me-home        
+[PASS] D-15  REQ-LSC-25     Follow-me-home : extinction 30 s apres la porte                30.01 s
+
+Evenements (temps reel depuis le debut) :
+     0.01 s  depart
+    18.18 s  virage_droite
+    37.40 s  fin_virage_droite
+    40.17 s  tunnel_entree
+    44.69 s  tunnel_sortie
+    45.41 s  ampoule_grillee
+    46.16 s  virage_gauche
+    58.86 s  fin_virage_gauche
+    60.77 s  acceleration
+    67.25 s  obstacle_en_vue
+    70.35 s  freinage_urgence
+    73.92 s  arret_urgence
+    76.93 s  pedale_relachee
+    79.93 s  redemarrage
+    90.03 s  retour_voie
+    96.41 s  obstacle_passe
+    97.21 s  crepuscule
+   104.10 s  nuit
+   110.72 s  vehicule_1
+   117.12 s  vehicule_1_croise
+   122.67 s  vehicule_2
+   129.09 s  vehicule_2_croise
+   132.29 s  arrivee
+   144.66 s  freinage_maison
+   145.75 s  stationnement
+   147.75 s  contact_coupe
+   149.75 s  porte_ouverte
+   150.76 s  porte_fermee
+   180.77 s  fmh_eteint

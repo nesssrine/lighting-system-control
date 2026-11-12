@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<robot name="LSC Tesla">
+    <webots>
+        <plugin type="lsc_virtual.lsc_car_plugin.LscCarPlugin">
+            <!-- zone du tunnel (piste d'essai, monde de jour), en metres -->
+            <tunnelXMin>-150</tunnelXMin>
+            <tunnelXMax>-110</tunnelXMax>
+            <tunnelYMin>-413</tunnelYMin>
+            <tunnelYMax>-387</tunnelYMax>
+        </plugin>
+    </webots>
+</robot>

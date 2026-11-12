@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="LSC HUD">
+    <webots>
+        <plugin type="lsc_virtual.lsc_demo_hud.LscDemoHud" />
+    </webots>
+</robot>

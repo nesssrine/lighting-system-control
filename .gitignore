@@ -1,0 +1,57 @@
+# --- MATLAB / Simulink (fichiers generes) ---
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.mex*
+sil/codegen/
+
+# --- Python / ROS 2 ---
+__pycache__/
+*.pyc
+build/
+install/
+log/
+
+# --- Archives et presentations lourdes ---
+*.tgz
+*.zip
+*.pptx
+
+# --- Paquet Webots de reference (projet externe webots_ros2_tesla) ---
+ros2_ref/
+
+# --- Anciens lanceurs de demo (remplaces par demo.sh) ---
+demo_v16.sh
+lancer_demo_v16.bat
+
+# --- Scripts d'ouverture rapide des modeles (brouillons) ---
+scripts/g[0-9].m
+scripts/h[0-9].m
+scripts/k[0-9].m
+scripts/m[0-9].m
+scripts/n[0-9].m
+scripts/p[0-9].m
+scripts/q[0-9].m
+
+# --- Anciens journaux d'execution (seuls les resultats finaux sont gardes) ---
+results/launch_*.txt
+results/launch.txt
+results/licences.txt
+results/ver.txt
+results/autosar_test*.txt
+results/*essai1*
+results/run_B1.txt
+results/run_B2.txt
+results/run_B2_v2.txt
+results/run_B3.txt
+results/run_B4.txt
+results/run_B6.txt
+results/run_INT.txt
+results/run_INT_v2.txt
+results/run_INT_scenarios.txt
+
+# --- Systeme ---
+Thumbs.db
+desktop.ini
+.DS_Store
